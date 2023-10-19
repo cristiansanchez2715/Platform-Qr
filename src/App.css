@@ -1,0 +1,243 @@
+body, html{
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* edit menu zone */
+
+/* .card-new-menu-option{
+
+
+}
+
+.select-option-seccion{
+
+} */
+
+.welcome-card{
+visibility: hidden;
+animation: welcomeKey 7s ease-in-out;
+position: fixed;
+background-color: #111;
+color: white;
+left: calc(50% - 200px);
+top: 25%;
+border-radius: 10px;
+width: 400px;
+
+}
+
+@keyframes welcomeKey{
+  0%{
+   visibility: hidden;
+  }
+  25%{
+visibility: visible;
+  }
+  50%{
+visibility: visible;
+  }
+  100%{
+visibility: hidden;
+  }
+
+}
+
+
+
+.container-general-section-products{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 0%;
+  border: black solid 1px;
+  box-shadow: 1px 1px 1px 4px #111;
+  width: 800px;
+  position: absolute;  
+  height: auto + 20px;
+}
+
+.img-product{
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+.img-product-container{
+display: flex;
+flex-direction: row;
+
+}
+
+.container-img{
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  
+  margin-left: 75px;
+}
+
+/* barnav */
+
+.barnav-container{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.barnav-button{
+  padding: 2.5px;
+  width: 200px;
+  background-color: #333;
+  color: white;
+
+}
+
+.barnav-button.active{
+  background-color: rgba(0, 0, 255, 0.5);
+  color: black;
+}
+
+.page-presentation{
+  /*  */
+ 
+  width: 500px;
+  height: 400px;
+  /* margin-left: calc(50% - 250px); */
+}
+
+.card-new-menu-option{
+border: black solid 1px;
+}
+.card-menu-option{
+  
+border: black solid 1px;
+}
+
+/* icons */
+
+.icon{
+  width: 16px;
+  height: 16px;
+}
+.icon-search{
+  width: 8px;
+  height: 8px;
+}
+.icon-qr{
+  width: 32px;
+  height: 32px;
+}
+
+/* home */
+
+.img-home{
+  width: 400px;
+  height: 400px;
+  
+  padding: 10px;
+}
+
+.container-presentation{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1px 3px 1px rgb(34, 33, 33);
+  /* border: black solid 1px; */
+  width: 900px;
+  margin-left: calc(50% - 450px);
+}
+
+/* formulario styles */
+
+.parrafo-form{
+  width: 300px;
+  margin-left: calc(50% - 150px);
+}
+
+.form-container{
+  border: solid black 1px;
+  width: 600px;
+  height: auto;
+  margin-left: calc(50% - 300px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* search styles */
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+}
+.hidden{
+  display: none;
+}
+.card-new-menu-option{
+  display: visible;
+}
+
+/* new seccion */
+
+.menu-QRreally-container{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+}
+
+.card-new-menu-qrReally{
+  background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* create menu */
+
+.btn-select-product{
+  position: absolute;
+  left: 40%;
+  top: 00px;
+}
